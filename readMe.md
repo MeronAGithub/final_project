@@ -1,7 +1,30 @@
-Submitted by: Meron Abera (directory id: mabera)
-Group Members: Meron Abera (mabera)
-App Description: All users to add items to pantry and search for recipes using their ingredients3
-YouTube Video Link: https://www.youtube.com/MyAmazingAPP
-APIs: VideoApp (http:notrealvideoapp.what), SoundApp (http:notreadlsoundapp.what)
-Contact Email: mabera@terpmail.umd.edu
-Deployed App Link: https://notreal.what.terpNel/myApp
+# Pantry Tracker App
+
+## Submitted by
+
+**Meron Abera**  
+**Directory ID:** mabera
+
+## Group Members
+
+- Meron Abera (mabera)
+
+## App Description
+
+This app allows users to add items to their pantry and search for recipes using the ingredients they already have.
+
+## YouTube Demo
+
+[Youtube Link] (https://youtu.be/LDmqJ0kEmUM)
+
+## APIs Used
+
+- [Spponacular](https://spoonacular.com/food-api)
+
+## Contact
+
+📧 **Email:** [mabera@terpmail.umd.edu](mailto:mabera@terpmail.umd.edu)
+
+## Deployed App
+
+[Live App Link](https://notreal.what.terpNel/myApp)
