@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+html,
+body {
+    font-family: "Comfortaa";
+    background-color: rgb(10, 11, 25);
+    color: rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(50, 55, 122);
+    background-color: rgb(189, 189, 189);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px
+}
+
+.recipes {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a:hover {
+    background-color: rgb(50, 55, 122);
+    color: rgb(189, 189, 189);
+}
+
+.choice {
+    display: flex;
+}
+
+#results {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recipeCard * {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.recipeCard {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 5px 0 0;
+    border: solid rgb(189, 189, 189) 1px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.recipeCard img {
+    width: 250px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.logistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+
+}
+
+.recipeCard h3 {
+    padding: 10px;
+}
+
+.recipeCard input[type="submit"] {
+    margin: 10px;
+    width: 150px;
+    padding: 10px 15px;
+    background-color: rgb(10, 11, 25);
+    color: rgb(213, 213, 213);
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}

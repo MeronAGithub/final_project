@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Search Results</title>
+</head>
+
+<body>
+    <h1>Search Results</h1>
+    <strong>Recipes found: </strong>
+    <% results.forEach(elem=> { %>
+        <div class="recipeCard">
+            <h3>
+                <%= elem.title %>
+            </h3>
+            <img src="<%=elem.image %>">
+            <div class="logistics">
+                <p><strong>Time: </strong>
+                    <%= elem.readyInMinutes %> mins
+                </p>
+                <p><strong>Servings: </strong>
+                    <%= elem.servings %>
+                </p>
+            </div>
+            <form action="/saveRecipe" method="POST">
+                <input type="hidden" name="title" value="<%= elem.title%>">
+                <input type="hidden" name="image" value="<%= elem.image%>">
+                <input type="hidden" name="readyInMinutes" value="<%= elem.readyInMinutes%>">
+                <input type="hidden" name="servings" value="<%= elem.servings%>">
+                <input type="hidden" name="summary" value="<%= elem.summary%>">
+                <input type="submit" value="Save Recipe">
+            </form>
+        </div>
+        <% }) %>
+
+            <a href="/">HOME</a>
+</body>
+
+</html>

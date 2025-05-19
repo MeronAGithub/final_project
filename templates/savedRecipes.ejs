@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Search Results</title>
+    <!-- <link href="../styles.css" rel="stylesheet"> -->
+</head>
+
+<body>
+    <h1>Saved Recipes</h1>
+    <strong>Recipes saved: </strong>
+    <div id="all-recipes">
+        <% results.forEach(elem=> { %>
+            <div class="recipeCard">
+                <h3>
+                    <%= elem.title %>
+                </h3>
+                <img src="<%=elem.image %>">
+                <div class="logistics">
+                    <p><strong>Time: </strong>
+                        <%= elem.readyInMinutes %> mins
+                    </p>
+                    <p><strong>Servings: </strong>
+                        <%= elem.servings %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+
+    <a href="/">HOME</a>
+</body>
+<style>
+    #all-recipes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+</style>
+
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Recipe Finder</title>
+</head>
+
+<body>
+    <h1>Pantry</h1>
+
+    <h2>Add Items</h2>
+    <p>Enter an item and submit to add</p>
+
+    <hr>
+    <h4>Current Items</h4>
+    <ul>
+        <%- pantry %>
+    </ul>
+
+    <form action="/pantry/addToPantry" method="post">
+        <input type="text" name="item" placeholder="eg. oregano">
+        <input type="submit" value="Add Pantry Item">
+    </form>
+
+    <br>
+    <a href="/pantry">HOME</a>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Recipe Finder</title>
+    <link href="../styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Saved Recipe <%- elem.title %></h1>
+
+    <div class="recipeCard">
+        <h3>
+            <%- elem.title %>
+        </h3>
+        <img src="<%-elem.image %>">
+        <div class="logistics">
+            <p><strong>Time: </strong>
+                <%- elem.time %> mins
+            </p>
+            <p><strong>Servings: </strong>
+                <%-elem.servings %>
+            </p>
+        </div>
+        <p><%-elem.description %></p>
+    </div>
+
+    <br>
+    <a href="/saved">HOME</a>
+
+</body>
+
+</html>

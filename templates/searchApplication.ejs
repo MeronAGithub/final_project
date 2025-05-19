@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Search Application</title>
+</head>
+
+<body>
+    <h1>Application</h1>
+    <form action="/searchResults" method="post">
+
+        <strong>Ingredients: </strong><br><br>
+
+        <div id="form-choice">
+            <bold>Please choose one of the following: </bold>
+            <button onclick="form1()">Use Pantry</button>
+            <button onclick="form2()">Enter Ingredients</button>
+        </div>
+
+        <br>
+
+        <hr><br>
+
+        <strong>Cuisine: (optional)</strong><br><br>
+        <select name="cuisineSelected">
+            <option value="none">None</option>
+            <option value="italian">Italian</option>
+            <option value="american">American</option>
+            <option value="asian">Asian</option>
+            <option value="chinese">Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="thai">Thai</option>
+            <option value="korean">Korean</option>
+            <option value="vietnamese">Vietnamese</option>
+            <option value="indian">Indian</option>
+            <option value="spanish">Spanish</option>
+            <option value="mexican">Mexican</option>
+            <option value="greek">Greek</option>
+        </select>
+        <br>
+        <hr><br>
+
+        <strong>Diet: (Optional)</strong><br><br>
+        <select name="dietSelected">
+            <option value="none">None</option>
+            <option value="gluten-free">Gluten Free</option>
+            <option value="ketogenic">Ketogenic</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="pescetarian">Pescetarian</option>
+        </select>
+
+        <br>
+        <hr><br>
+
+        <strong>Intolerances: (Optional)</strong><br><br>
+        <input type="checkbox" name="intolerance" value="dairy"> Dairy
+        <input type="checkbox" name="intolerance" value="egg"> Egg
+        <input type="checkbox" name="intolerance" value="gluten"> Gluten
+        <input type="checkbox" name="intolerance" value="grain"> Grain
+        <input type="checkbox" name="intolerance" value="peanut"> Peanut
+        <input type="checkbox" name="intolerance" value="seafood"> Seafood
+        <input type="checkbox" name="intolerance" value="shellfish"> Shellfish
+        <input type="checkbox" name="intolerance" value="soy"> Soy
+        <input type="checkbox" name="intolerance" value="tree-nut"> Tree Nut
+        <input type="checkbox" name="intolerance" value="wheat"> Wheat
+
+        <br>
+        <hr><br>
+
+        <strong>Max Ready Time (Optional)</strong><br><br>
+        <input type="number" value="60" step="15" min="15" max="120" name="time">
+
+        <br>
+        <hr><br>
+
+        <br>
+        <input type="reset" />
+        <input type="submit" value="Search" />
+        <hr>
+        <a href="/">HOME</a>
+    </form>
+</body>
+<script>
+    function form1() {
+        document.querySelector("#form-choice").innerHTML = '<p>Using Pantry Items!</p>'
+    }
+
+    function form2() {
+        document.querySelector("#form-choice").innerHTML =
+            `
+        <p>Enter ingredients (3 minimum)</p>
+        <input type="text" name="ingredient" required /> <br><br>
+        <input type="text" name="ingredient" required /> <br><br>
+        <input type="text" name="ingredient" required /> <br><br>
+        <input type="text" name="ingredient" /> <br><br>
+        <input type="text" name="ingredient" /> <br><br>
+        `
+    }
+
+</script>
+
+</html>
