@@ -13,14 +13,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //routing
 const pantry = require("./routes/pantry");
 app.use('/pantry', pantry);
-// const saved = require("./routes/saved");
-// app.use('/saved', saved);
-// const browse = require("./routes/browse");
 
 //MongoDB packages
-require("dotenv").config({
-    path: path.resolve(__dirname, ".env"),
-});
+// require("dotenv").config({
+//     path: path.resolve(__dirname, ".env"),
+// });
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 //Listen for stop
