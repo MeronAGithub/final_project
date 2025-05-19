@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router();
 const bodyParser = require("body-parser");
 
-require("dotenv").config({
-    path: path.resolve(__dirname, "../.env"),
-});
+// require("dotenv").config({
+//     path: path.resolve(__dirname, "../.env"),
+// });
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 async function main() {
